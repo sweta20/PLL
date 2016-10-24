@@ -22,6 +22,7 @@ chalkboard(L) :-
 	permutation([onion,corn,olive,tomato,pineapple],[HT2,MT2,PT2,ST2,NT2]),
 	permutation([55,65,70,85,100],[HP,MP,PP,SP,NP]),!.
 
+%permutation function
 permutation([],[]).
 permutation(L,[X|P]) :- sel(X,L,L1), permutation(L1,P).
 

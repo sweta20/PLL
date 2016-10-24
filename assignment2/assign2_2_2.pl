@@ -3,6 +3,7 @@ append([],List,List).
 append([H|T],List,[H|T1]):-
 	append(T,List,T1).
 
+movement([X1,Y1|_], O, [X1,Y1|_]):- write([]),!.
 movement([X1,Y1|_], O, [X2,Y2|_]):-
 	N1 is X2-X1,
 	N2 is Y2-Y1,
